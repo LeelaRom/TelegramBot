@@ -7,6 +7,7 @@ Created on 23 apr. 2018 �.
 
 import config
 import telebot
+from ctypes.test.test_pickling import name
 
 bot = telebot.TeleBot(config.token)
 
@@ -23,7 +24,7 @@ def start(message):
     
     
 def hello(message):
-    bot.send_message(message.chat.id, "Hello, {name}, I am happy to see you.".format(mane=message.text))
+    bot.send_message(message.chat.id, "Hello, {name}, I am happy to see you.".format(name=message.text))
     
     
 if __name__ == '__main__':
