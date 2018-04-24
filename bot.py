@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*- 
+# -*- coding: utf-8 -*-
 '''
 Created on 23 apr. 2018 �.
 
@@ -10,9 +10,9 @@ import telebot
 
 bot = telebot.TeleBot(config.token)
 
-@bot.message_handler(content_types=["text"])
-def repeat_all_messages(message): # Название функции не играет никакой роли, в принципе
-    bot.send_message(message.chat.id, message.text)
+#@bot.message_handler(content_types=["text"])
+#def repeat_all_messages(message): # Название функции не играет никакой роли, в принципе
+#    bot.send_message(message.chat.id, message.text)
 
   
 #Обработчик команды start    
